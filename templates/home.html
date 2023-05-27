@@ -1,0 +1,184 @@
+{% load static %}
+{% include "header.html" %}
+<div class="container-fluid hero-container">
+  <div class="hero-background"></div>
+  <div class="hero-content container">
+    <div class="row">
+      <div class="col-lg-6" style="display:flex; justify-content:center; flex-direction: column;">
+        <div>
+          <h1 class="text-lg-start">Sustainable <span style="color: #f9c23c">Farming</span></h1>
+        </div>
+        <p class="text-lg-start">Identifying the Best Crops for Your Region</p>
+        <a href="/start_predict" class="btn nav_btn_rev btn-sm" id="hero_btn">
+          Start
+          <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+          </svg>
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <img src=" {% static 'img/hero_forehead.jpg' %}"
+          style="height:350px;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+          class="img-fluid rounded mx-auto d-block" alt="farming ai">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container hero-next-section">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="text-center fw-bold mt-5">The Main Parameters</h3>
+      <p>
+        The trend of precision agriculture is on the rise these days. Farmers are
+        able to make informed decisions about their farming strategy with the help
+        of this tool.
+      </p>
+    </div>
+    <div class="row my-5">
+      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+        <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Ratio of Nitrogen content in soil</h5>
+        <p>
+          The ratio of nitrogen content in soil can vary depending on several factors, including the type of soil, the
+          location, and the management practices used. In general, nitrogen is one of the most important nutrients for
+          plant growth and is often a limiting factor for crop production.
+        </p>
+      </div>
+      <div class="image-container col-lg-6 d-none d-lg-block">
+        <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+    </div>
+
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6">
+        <img src="{% static 'img/phosphorous.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Ratio of phosphorus content in soil</h5>
+        <p>
+          The ratio of phosphorus content in soil can vary widely depending on factors such as soil type, pH, and
+          nutrient management practices. In general, phosphorus is present in soil in relatively small quantities
+          compared to other macronutrients like nitrogen and potassium.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+        <img src="{% static 'img/potassium.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Ratio of potassium content in soil</h5>
+        <p>
+          The ratio of potassium content in soil can vary depending on factors such as soil type, pH, and nutrient
+          management practices. Potassium is an important macronutrient for plant growth and is often present in soil in
+          higher quantities than phosphorus.
+        </p>
+      </div>
+      <div class="image-container col-lg-6 d-none d-lg-block">
+        <img src="{% static 'img/potassium.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+    </div>
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6">
+        <img src="{% static 'img/soil_temp.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Temperature in degree Celsius</h5>
+        <p>
+          The temperature in soil can vary depending on a variety of factors such as climate, depth, moisture content,
+          and time of day or year. Generally, soil temperatures tend to lag behind air temperatures and may fluctuate
+          less due to the insulating properties of the soil.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+        <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Relative humidity in %</h5>
+        <p>
+          Relative humidity is a measure of the amount of moisture in the air relative to the maximum amount of moisture
+          that the air could hold at a given temperature. In soil, relative humidity refers to the amount of moisture in
+          the soil relative to the maximum amount of moisture the soil could hold at a given temperature.
+        </p>
+      </div>
+      <div class="image-container col-lg-6 d-none d-lg-block">
+        <img src="{% static 'img/humidity.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+    </div>
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6">
+        <img src="{% static 'img/ph.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">ph value of the soil</h5>
+        <p>
+          The pH value of soil is a measure of its acidity or alkalinity. It is measured on a scale from 0 to 14, where
+          7 is considered neutral, values below 7 are acidic, and values above 7 are alkaline.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row my-5">
+      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+        <img src="{% static 'img/rainfall.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+      <div class="col-lg-6" style="display: flex; flex-direction:column; justify-content: center">
+        <h5 class="fw-bold mt-5">Rainfall in mm</h5>
+        <p>
+          Rainfall is an important factor affecting soil moisture and fertility. The amount of rainfall required to
+          maintain optimal soil moisture levels varies depending on factors such as soil type, vegetation cover, and
+          temperature. In general, the amount of rainfall needed to maintain healthy soil moisture levels is between 500
+          to 800 millimeters (mm) per year.
+        </p>
+      </div>
+      <div class="image-container col-lg-6 d-none d-lg-block">
+        <img src="{% static 'img/rainfall.jpg' %} " class="img-fluid mx-auto d-block target-image"
+          style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" style="margin-top: 68px ; background-color: #F5F5F5; padding: 100px 0px;">
+    <h3 class="text-center fw-bold pb-5">Identify Now The Best Crops for Your Region</h3>
+    <a href="/start_predict" class="btn nav_btn btn-sm mx-auto">
+      Start
+      <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+      </svg>
+    </a>
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function () {
+    var scrolled = window.scrollY;
+    document.querySelector('.hero-background').style.transform = 'translateY(' + scrolled * 0.2 + 'px)';
+  });
+
+</script>
+{% include "footer.html" %}

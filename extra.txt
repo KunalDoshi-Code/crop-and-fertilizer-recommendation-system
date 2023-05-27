@@ -1,0 +1,50 @@
+<div class="w-full flex align-middle justify-center">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 " action="{% url 'result' %}">
+            {% csrf_token %} 
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="N">
+                N - ratio of Nitrogen content in soil
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="N" name="N" type="text" placeholder="N - ratio of Nitrogen content in soil">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="P">
+                P - ratio of Phosphorous content in soil
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="P" name="P" type="text" placeholder="P - ratio of Phosphorous content in soil">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="K">
+                K - ratio of Potassium content in soil
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="K" name="K" type="text" placeholder="K - ratio of Potassium content in soil">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="temperature">
+                temperature - temperature in degree Celsius
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="temperature" name="temperature" type="text" placeholder="temperature - temperature in degree Celsius">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="humidity">
+                humidity - relative humidity in %
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="humidity" name="humidity" type="text" placeholder="humidity - relative humidity in %">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="ph">
+                ph - ph value of the soil
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="ph" name="ph" type="text" placeholder="ph - ph value of the soil">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="rainfall">
+                rainfall - rainfall in mm
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required id="rainfall" name="rainfall" type="text" placeholder="rainfall - rainfall in mm">
+          </div>
+          <div class="flex items-center justify-between">
+            <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="Submit" name="submit" value="submit"></input>
+          </div>
+        </form>
+      </div>
