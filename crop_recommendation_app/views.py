@@ -23,7 +23,8 @@ def crop_result(request):
     input_list.append(request.GET['ph'])
     input_list.append(request.GET['rainfall'])
     # print(input_list)
-    prediction = model.predict([input_list])
+    input_list_num = list(map(int, input_list))
+    prediction = model.predict([input_list_num])
     return render(request, 'crop_result.html', {'prediction': prediction})
 
 def fertilizer_result(request):
