@@ -1,25 +1,27 @@
 {
+    "version": 2,
     "builds": [
-        {
-            "src": "crop_recommendation_app/wsgi.py",
-            "use": "@vercel/python",
-            "config": {
-                "maxLambdaSize": "15mb",
-                "runtime": "python3.9"
-            }
-        },
-        {
-            "src": "build_files.sh",
-            "use": "@vercel/static",
-            "config": {
-                "distDir": "staticfiles"
-            }
+      {
+        "src": "crop_recommendation_app/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "staticfiles_build"
         }
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "crop_recommendation_app/wsgi.py"
-        }
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "crop_recommendation_app/wsgi.py"
+      }
     ]
-}
+  }
