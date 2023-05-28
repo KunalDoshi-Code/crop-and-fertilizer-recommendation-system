@@ -1,0 +1,92 @@
+{% load static %}
+{% include "header.html" %}
+<div class="container-fluid start_predict">
+  <div class="container start_predict_form" style="padding: 80px 40px;">
+      <form class="row g-3" style="margin:80px 0px;" action="{% url 'fertilizer_result' %}">
+        
+    <h5 class="text-center" style="margin: 30px 0px; padding: 15px 0px; background-color: #000; color:#fff">Fertilizer Prediction - Form</h5>
+          {% csrf_token %} 
+          
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="temperature">
+              temperature - temperature in degree Celsius
+          </label>
+          <input class="form-control" required id="temperature" name="temperature" type="number" placeholder="Temperature">
+        </div>
+        
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="humidity">
+              humidity - relative humidity in %
+          </label>
+          <input class="form-control" required id="humidity" name="humidity" type="number" placeholder="Humidity">
+        </div>
+
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="moisture">
+              Moisture 
+          </label>
+          <input class="form-control" required id="moisture" name="moisture" type="number" placeholder="Moisture">
+        </div>
+
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="soil_type">
+            Soil Type 
+        </label>
+          <select class="form-select form-control" id="soil_type" name="soil_type" aria-label="soil type">
+            <option selected>Open this select menu</option>
+            <option value="2">Loamy</option>
+            <option value="4">Sandy</option>
+            <option value="1">Clayey</option>
+            <option value="0">Black</option>
+            <option value="3">Red</option>
+          </select>
+        </div>
+
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="crop_type">
+            Crop Type 
+        </label>
+          <select class="form-select form-control" id="crop_type" name="crop_type" aria-label="crop type">
+            <option selected>Open this select menu</option>
+            <option value="8">Sugarcane</option>
+            <option value="1">Cotton</option>
+            <option value="3">Millets</option>
+            <option value="6">Paddy</option>
+            <option value="7">Pulses</option>
+            <option value="3">Maize</option>
+            <option value="0">Barley</option>
+            <option value="5">Oil seeds</option>
+            <option value="2">Ground Nuts</option>
+            <option value="9">Tobacco</option>
+            <option value="10">Wheat</option>
+          </select>
+        </div>
+
+       <div class="mb-4 col-md-6">
+          <label class="form-label" for="N">
+              N - ratio of Nitrogen content in soil
+          </label>
+          <input class="form-control" required id="N" name="N" type="number" placeholder="N">
+        </div>
+
+        <div class="mb-4 col-md-6">
+          <label class="form-label" for="P">
+              P - ratio of Phosphorous content in soil
+          </label>
+          <input class="form-control" required id="P" name="P" type="number" placeholder="P">
+        </div>
+
+
+        <div class="col-md-6">
+          <button  class="btn nav_btn mx-auto" style="max-width: 320px;" type="Submit" name="submit">
+            Submit
+            <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+{% include "footer.html" %}
