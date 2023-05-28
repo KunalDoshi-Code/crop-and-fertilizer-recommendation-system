@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import joblib
 
+
 def home(request):
     return render(request, 'home.html')
 
@@ -23,7 +24,8 @@ def crop_result(request):
     input_list.append(request.GET['ph'])
     input_list.append(request.GET['rainfall'])
     # print(input_list)
-    input_list_num = list(map(int, input_list))
+    input_list_num = list(map(float, input_list))
+    # print(input_list_num)
     prediction = model.predict([input_list_num])
     return render(request, 'crop_result.html', {'prediction': prediction})
 
