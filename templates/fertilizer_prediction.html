@@ -11,21 +11,21 @@
           <label class="form-label" for="temperature">
               temperature - temperature in degree Celsius
           </label>
-          <input class="form-control" required id="temperature" name="temperature" type="text" placeholder="Temperature">
+          <input class="form-control" required id="temperature" name="temperature" type="number" placeholder="Temperature">
         </div>
         
         <div class="mb-4 col-md-6">
           <label class="form-label" for="humidity">
               humidity - relative humidity in %
           </label>
-          <input class="form-control" required id="humidity" name="humidity" type="text" placeholder="Humidity">
+          <input class="form-control" required id="humidity" name="humidity" type="number" placeholder="Humidity">
         </div>
 
         <div class="mb-4 col-md-6">
           <label class="form-label" for="moisture">
               Moisture 
           </label>
-          <input class="form-control" required id="moisture" name="moisture" type="text" placeholder="Moisture">
+          <input class="form-control" required id="moisture" name="moisture" type="number" placeholder="Moisture">
         </div>
 
         <div class="mb-4 col-md-6">
@@ -34,10 +34,10 @@
         </label>
           <select class="form-select form-control" id="soil_type" name="soil_type" aria-label="soil type">
             <option selected>Open this select menu</option>
-            <option value="1">Loamy</option>
-            <option value="2">Sandy</option>
-            <option value="3">Clayey</option>
-            <option value="3">Black</option>
+            <option value="2">Loamy</option>
+            <option value="4">Sandy</option>
+            <option value="1">Clayey</option>
+            <option value="0">Black</option>
             <option value="3">Red</option>
           </select>
         </div>
@@ -48,11 +48,17 @@
         </label>
           <select class="form-select form-control" id="crop_type" name="crop_type" aria-label="crop type">
             <option selected>Open this select menu</option>
-            <option value="1">Sugarcane</option>
-            <option value="2">Cotton</option>
+            <option value="8">Sugarcane</option>
+            <option value="1">Cotton</option>
             <option value="3">Millets</option>
-            <option value="3">Paddy</option>
-            <option value="3">Pulses</option>
+            <option value="6">Paddy</option>
+            <option value="7">Pulses</option>
+            <option value="3">Maize</option>
+            <option value="0">Barley</option>
+            <option value="5">Oil seeds</option>
+            <option value="2">Ground Nuts</option>
+            <option value="9">Tobacco</option>
+            <option value="10">Wheat</option>
           </select>
         </div>
 
@@ -60,21 +66,21 @@
           <label class="form-label" for="N">
               N - ratio of Nitrogen content in soil
           </label>
-          <input class="form-control" required id="N" name="N" type="text" placeholder="N">
+          <input class="form-control" required id="N" name="N" type="number" placeholder="N">
         </div>
 
         <div class="mb-4 col-md-6">
           <label class="form-label" for="P">
               P - ratio of Phosphorous content in soil
           </label>
-          <input class="form-control" required id="P" name="P" type="text" placeholder="P">
+          <input class="form-control" required id="P" name="P" type="number" placeholder="P">
         </div>
 
         <div class="mb-4 col-md-6">
           <label class="form-label" for="K">
               K - ratio of Potassium content in soil
           </label>
-          <input class="form-control" required id="K" name="K" type="text" placeholder="K">
+          <input class="form-control" required id="K" name="K" type="number" placeholder="K">
         </div>
 
         <div class="col-md-6">
