@@ -4,12 +4,13 @@
   <div class="hero-background"></div>
   <div class="hero-content container">
     <div class="row">
-      <div class="col-lg-6" style="display:flex; justify-content:center; flex-direction: column;">
+      <div class="col-lg-6" style="display:flex; justify-content:center; flex-direction: column;" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-back" data-aos-duration="1200">
         <div>
-          <h1 class="text-lg-start">Sustainable <span style="color: #f9c23c">Farming</span></h1>
+          <h1 class="text-lg-start">Sustainable <span style="color: #0c5642">Farming</span></h1>
         </div>
         <p class="text-lg-start">Identifying the Best Crops for Your Region</p>
-        <a href="/start_predict" class="btn nav_btn_rev btn-sm" id="hero_btn">
+        <a class="btn nav_btn_rev btn-sm" id="hero_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
           Start
           <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -18,7 +19,8 @@
           </svg>
         </a>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-back"
+        data-aos-delay="300" data-aos-duration="1300">
         <img src=" {% static 'img/hero_forehead.jpg' %}"
           style="height:350px;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
           class="img-fluid rounded mx-auto d-block" alt="farming ai">
@@ -38,7 +40,8 @@
       </p>
     </div>
     <div class="row my-5">
-      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        class="image-container col-lg-6 d-xs-block d-lg-none">
         <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -50,7 +53,7 @@
           plant growth and is often a limiting factor for crop production.
         </p>
       </div>
-      <div class="image-container col-lg-6 d-none d-lg-block">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6 d-none d-lg-block">
         <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -58,7 +61,7 @@
 
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6">
         <img src="{% static 'img/phosphorous.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -73,7 +76,8 @@
     </div>
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        class="image-container col-lg-6 d-xs-block d-lg-none">
         <img src="{% static 'img/potassium.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -85,14 +89,14 @@
           higher quantities than phosphorus.
         </p>
       </div>
-      <div class="image-container col-lg-6 d-none d-lg-block">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6 d-none d-lg-block">
         <img src="{% static 'img/potassium.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
     </div>
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6">
         <img src="{% static 'img/soil_temp.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -107,7 +111,8 @@
     </div>
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        class="image-container col-lg-6 d-xs-block d-lg-none">
         <img src="{% static 'img/nitrogen.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -119,14 +124,14 @@
           the soil relative to the maximum amount of moisture the soil could hold at a given temperature.
         </p>
       </div>
-      <div class="image-container col-lg-6 d-none d-lg-block">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6 d-none d-lg-block">
         <img src="{% static 'img/humidity.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
     </div>
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6">
         <img src="{% static 'img/ph.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -140,7 +145,8 @@
     </div>
     <hr>
     <div class="row my-5">
-      <div class="image-container col-lg-6 d-xs-block d-lg-none">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+        class="image-container col-lg-6 d-xs-block d-lg-none">
         <img src="{% static 'img/rainfall.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -153,7 +159,7 @@
           to 800 millimeters (mm) per year.
         </p>
       </div>
-      <div class="image-container col-lg-6 d-none d-lg-block">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="image-container col-lg-6 d-none d-lg-block">
         <img src="{% static 'img/rainfall.jpg' %} " class="img-fluid mx-auto d-block target-image"
           style="height:200px;border-radius: 10px ;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
       </div>
@@ -162,9 +168,9 @@
 </div>
 
 <div class="container-fluid">
-  <div class="row" style="margin-top: 68px ; background-color: #F5F5F5; padding: 100px 0px;">
-    <h3 class="text-center fw-bold pb-5">Identify Now The Best Crops for Your Region</h3>
-    <a href="/start_predict" class="btn nav_btn btn-sm mx-auto">
+  <div class="row" style="margin-top: 68px ; background-color: #adffe4; padding: 100px 0px;">
+    <h3 class="text-center fw-bold pb-5">Identify Now The Best Crops And Fertilizers for Your Region</h3>
+    <a class="btn nav_btn btn-sm mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Start
       <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -174,11 +180,30 @@
     </a>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: #000;">Choose the Recommendation System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-center align-items-center" style="background-color: #adffe4; height:500px;">
+        <div class="btn-group d-flex justify-content-center align-items-center" role="group" aria-label="Inline Buttons">
+          <a href="crop_prediction" type="button" class="btn nav_btn">Crop Recommendation </a>
+          <a href="fertilizer_prediction" type="button" class="btn nav_btn_rev">Fertilizer Recommendation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   window.addEventListener('scroll', function () {
     var scrolled = window.scrollY;
     document.querySelector('.hero-background').style.transform = 'translateY(' + scrolled * 0.2 + 'px)';
+    document.querySelector('.hero-background').style.marginBottom = +scrolled * 0.2 + 'px)';
   });
-
 </script>
 {% include "footer.html" %}

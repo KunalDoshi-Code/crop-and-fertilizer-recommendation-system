@@ -1,5 +1,5 @@
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 p{
   font-family: 'DM Sans', sans-serif;
@@ -10,7 +10,8 @@ p{
 }
 .navbar_main {
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.80);
+  backdrop-filter: saturate(180%) blur(20px)
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -60,7 +61,6 @@ p{
   background-color: #000;
   color: #fff;
 }
-
 .hero-container {
   position: relative;
   height: 100vh;
@@ -78,7 +78,8 @@ p{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/herobg.jpg");
+  background-image: linear-gradient(0deg, rgba(81,255,157,0.40) 0%, rgba(130,255,237,60) 100%), url("../img/herobg.jpg");
+  animation: gradientAnimation 5s ease infinite;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,8 +97,8 @@ p{
 }
 .hero-content h1 {
   font-weight: 900;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  color: #080808;
+  text-shadow: 1px 1px 1px rgb(255, 253, 253);
 }
 .hero-content p {
   color: #fff;
@@ -107,7 +108,7 @@ p{
 }
 
 .hero-next-section {
-  margin-top: 150px;
+  padding-top: 230px;
   margin-bottom: 60px;
 }
 .image-container {
@@ -134,18 +135,9 @@ p{
 }
 .start_predict{
   margin: -80px 0px;
- /* The image used */
- background-image:
- linear-gradient( to bottom,
-      rgba(255, 255, 255, 0.4) 0%, 
-      rgba(255, 255, 255, 0.4) 40%, 
-      rgba(255, 255, 255, 0.4) 100% ),
-       url("https://images.unsplash.com/photo-1561533646-a3f5f8a8ace2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
-
- /* Set a specific height */
+ background-image:linear-gradient(45deg, rgba(81,255,157,0.40) 0%, rgba(130,255,237,60) 100%), url("https://images.unsplash.com/photo-1561533646-a3f5f8a8ace2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
  min-height: 500px;
-
- /* Create the parallax scrolling effect */
+ animation: gradientAnimation 5s ease infinite;
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
@@ -174,7 +166,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .start_predict_form {
   color: #000000;
-  background-color: #e9fce7;
+  background-color: #adffe4;
   padding: 0px 40px;
 }
 .form-control:focus {
@@ -207,7 +199,9 @@ input[type='range']::-webkit-slider-thumb {
 
 }
 
-
+.modal-header .btn-close{
+  color:#000;
+}
 
 
 
@@ -299,5 +293,17 @@ input[type='range']::-webkit-slider-thumb {
   }
   100% {
     text-shadow: none;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
