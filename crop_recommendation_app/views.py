@@ -40,6 +40,7 @@ def fertilizer_result(request):
     input_list.append(request.GET['crop_type'])
     input_list.append(request.GET['N'])
     input_list.append(request.GET['P'])
+    input_list.append(request.GET['K'])
     # print(input_list)
     prediction = model.predict([input_list])
     return render(request, 'fertilizer_result.html', {'prediction': prediction})
